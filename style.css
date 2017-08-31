@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #F0EAD6;
+  overflow-x: hidden;
+}
+
+
+
+
+/*--Media Query--*/
+
+@media screen and (min-width: 720px) {
+
+
+/*--Parallax Header--*/
+
+.header {
+  padding: 300px 0;
+  position: relative;
+  background: url('pics/img_2450.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+  overflow: hidden;
+}
+
+.bird-pic {
+  height: 125px;
+  width: 435px;
+  background: url(pics/eagle.png) no-repeat left;
+  position: absolute;
+  bottom: 150px;
+  left: 30%;
+  margin-left: -217px;
+  padding: 20px;
+}
+
+.header h1 {
+  font-family: 'nothing you could do', sans-serif, serif;
+  font-size: 500%;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  text-shadow: 5px 5px 20px #000;
+  width: 100%;
+  left: 0px;
+  top: 90px;
+}
+
+/*--Text sections--*/
+
+.text-sections p {
+  font-family: 'Padauk', sans-serif, serif;
+  line-height: 2;
+  text-align: justify;
+  font-size: 140%;
+  color: #000;
+  padding: 20px;
+}
+
+.text-sections {
+  background-color: #F0EAD6;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/*--Images--*/
+
+img {
+  width: 45%;
+  height: 45%;
+  filter: grayscale(100%);
+  border-radius: 5%;
+  border: 5px solid #fff;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.6s ease-in-out;
+}
+
+/*--Parallax Pics--*/
+
+.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/*--Footer--*/
+
+.footer {
+  text-align: center;
+  font-size: 120%;
+  font-family: 'nothing you could do', sans-serif, serif;
+  padding: 20px;
+  background-color: #fff;
+}
+
+}
+
+
+
+
+
+/*--Second Media Query--*/
+
+@media screen and (max-width: 720px) {
+
+  /*--Parallax Header--*/
+
+  .header {
+    padding: 250px 0;
+    position: relative;
+    background: url('pics/img_2450.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    overflow: hidden;
+  }
+
+  .header h1 {
+    font-family: 'nothing you could do', sans-serif, serif;
+    font-size: 400%;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    text-shadow: 5px 5px 20px #000;
+    width: 100%;
+    left: 0px;
+    top: 90px;
+  }
+
+  /*--Text sections--*/
+
+  .text-sections p {
+    font-family: 'Padauk', sans-serif, serif;
+    line-height: 2;
+    text-align: justify;
+    font-size: 120%;
+    color: #000;
+    padding: 20px;
+  }
+
+  .text-sections {
+    background-color: #F0EAD6;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  /*--Images--*/
+
+  img {
+    width: 90%;
+    height: 90%;
+    filter: grayscale(100%);
+    border-radius: 5%;
+    border: 5px solid #fff;
+  }
+
+  .pictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.6s ease-in-out;
+  }
+
+  .pictures img:nth-child(even) {
+    margin-top: 50px;
+  }
+
+  /*--Parallax Pics--*/
+
+  .is-showing {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  /*--Footer--*/
+
+  .footer {
+    text-align: center;
+    font-size: 120%;
+    font-family: 'nothing you could do', sans-serif, serif;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  }
+}
